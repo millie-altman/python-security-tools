@@ -2,6 +2,7 @@
 ## CTI Analyst Tool | URL Risk Scoring | Domain Intelligence | Phishing Triage
 
 **Author:** Millie Altman
+
 **Language:** Python 3.x  
 **Dependencies:** `python-whois`, `re`, `urllib`  
 **Status:** v3 — Investigation Grade  
@@ -18,7 +19,7 @@ This tool automates that workflow, producing structured risk scoring output that
 
 ## CTI Application
 
-This tool was used directly during the analysis documented in the [Phishing Campaign Intelligence Report (SOC-IR-2026-017)](https://github.com/[yourusername]/threat-intelligence-portfolio/blob/main/finished-intelligence/phishing-triage-report.md).
+This tool was used directly during the analysis documented in the [Phishing Campaign Intelligence Report (SOC-IR-2026-017)](https://github.com/millie-altman/threat-intelligence-portfolio/blob/main/finished-intelligence/phishing-triage-report.md).
 
 The suspicious URL `hxxps://login-microsoft-support[.]com/auth` was analyzed using this tool, which flagged domain impersonation patterns, a suspicious credential harvesting path, and a recently registered domain — corroborating manual header analysis findings.
 
@@ -47,28 +48,28 @@ The suspicious URL `hxxps://login-microsoft-support[.]com/auth` was analyzed usi
 This tool was developed in three stages to reflect a real development lifecycle — from basic detection prototype to investigation-grade analyst utility.
 
 ### Version 1 — Basic URL Detector
-**File:** `phishing_detector.py`
+**File:** `phishing-detector.py`
 
 Core detection logic: suspicious keywords, HTTP vs HTTPS, URL shorteners, IP-based domains. Designed as a fast triage filter.
 
 ```bash
-python phishing_detector.py
+python phishing-detector.py
 ```
 
 **Example output:**
 
-![V1 Output](./images/phishing_output_example.png)
+![V1 Output](./images/phishing-output-example.png)
 
 ---
 
 ### Version 2 — Domain Intelligence
-**File:** `phishing_detector_expanded.py`
+**File:** `phishing-detector-expanded.py`
 
 Adds WHOIS domain registration age lookup. Newly registered domains (< 30 days) are a high-confidence phishing indicator — this version surfaces that data automatically.
 
 ```bash
 pip install python-whois
-python phishing_detector_expanded.py
+python phishing-detector-expanded.py
 ```
 
 **New in V2:**
@@ -79,17 +80,17 @@ python phishing_detector_expanded.py
 ---
 
 ### Version 3 — Investigation-Grade Output
-**File:** `phishing_investigation_tool.py`
+**File:** `phishing-investigation-tool.py`
 
 Full SOC-style investigation report output. Produces structured, labeled sections — Target URL, Domain, Indicators Detected, Domain Intelligence, Threat Assessment — formatted for direct use in incident documentation.
 
 ```bash
-python phishing_investigation_tool.py
+python phishing-investigation-tool.py
 ```
 
 **Example output:**
 
-![V3 Investigation Output](./images/phishing_url_investigation_outcome.png)
+![V3 Investigation Output](./images/phishing-url-investigation-outcome.png)
 
 **New in V3:**
 - Full investigation report formatting
