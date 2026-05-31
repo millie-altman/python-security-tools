@@ -70,7 +70,7 @@ END
 
 **Example output screenshot:**
 
-![Header Analysis Output](./images/email-header-analysis_output.png)
+![Header Analysis Output](./images/email-header-analysis-output.png)
 
 ---
 
