@@ -1,6 +1,7 @@
 # Python Security Tools
 
 **Analyst & Developer:** Millie Altman
+
 **Focus:** CTI Analyst Tooling | Phishing Detection | IOC Enrichment | OSINT Automation  
 **Language:** Python 3.x  
 
