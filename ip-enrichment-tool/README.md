@@ -2,6 +2,7 @@
 ## CTI Analyst Tool | AbuseIPDB API | IOC Reputation Lookup
 
 **Author:** Millie Altman
+
 **Language:** Python 3.x  
 **Dependencies:** `requests`, `os`, `sys`  
 **Status:** v1  
