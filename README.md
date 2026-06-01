@@ -2,6 +2,13 @@
 
 **Analyst & Developer:** Millie Altman
 
+![Python](https://img.shields.io/badge/Language-Python%203.x-blue)
+![CTI Tooling](https://img.shields.io/badge/Focus-CTI%20Analyst%20Tooling-purple)
+![Phishing Detection](https://img.shields.io/badge/Tool-Phishing%20Detection-orange)
+![IOC Enrichment](https://img.shields.io/badge/Tool-IOC%20Enrichment-red)
+![AbuseIPDB](https://img.shields.io/badge/API-AbuseIPDB-darkblue)
+![OSINT](https://img.shields.io/badge/Skill-OSINT%20Automation-blue)
+
 **Focus:** CTI Analyst Tooling | Phishing Detection | IOC Enrichment | OSINT Automation  
 **Language:** Python 3.x  
 
